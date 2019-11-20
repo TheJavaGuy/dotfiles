@@ -1,0 +1,18 @@
+[user]
+	name = Ivan Milosavljevic
+	email = TheJavaGuy@yandex.com
+[commit]
+	template = ~/.gitmessage
+[core]
+	editor = /usr/bin/vim +3 -c 'startinsert'
+	excludesfile = ~/.gitignore_global
+[pull]
+	rebase = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[rebase]
+	autosquash = true
