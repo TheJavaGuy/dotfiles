@@ -8,7 +8,10 @@ brew install jrnl
 brew install fzf
 (brew --prefix)/opt/fzf/install
 brew install ag
+brew install bat
+brew install fd
 brew install tmux
+brew install ponyc
 brew cask install iterm2
 brew cask install atom
 brew cask install firefox
@@ -34,3 +37,5 @@ brew cask install telegram
 brew cask install mat
 brew cask install docker
 brew cask install visual-studio-code
+brew cask install libreoffice
+brew cask install vlc

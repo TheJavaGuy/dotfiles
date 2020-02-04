@@ -64,14 +64,19 @@ ZSH_THEME="ys"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   aws
+  brew
   colored-man-pages
   docker
   docker-compose
   git
   gradle
+  history
+  jenv
+  terminalapp
+  tmux
+  tmuxinator
   terminalapp
   osx
-  history
   zsh-autosuggestions
 )
 
@@ -92,6 +97,11 @@ source $ZSH/oh-my-zsh.sh
 # fi
 export EDITOR='vim'
 export LC_ALL=en_US.UTF-8
+export LESSCHARSET=UTF-8
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export FZF_DEFAULT_COMMAND="fd . $HOME"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="fd -t d . $HOME"
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -106,6 +116,7 @@ export LC_ALL=en_US.UTF-8
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff00ff"
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
+bindkey "ç" fzf-cd-widget
 
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
