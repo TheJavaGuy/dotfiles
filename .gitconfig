@@ -1,3 +1,8 @@
+[merge]
+	renormalize = true
+	ff = true
+[push]
+	default = simple
 [user]
 	name = Ivan Milosavljevic
 	email = TheJavaGuy@yandex.com
@@ -16,3 +21,5 @@
 	trustExitCode = true
 [rebase]
 	autosquash = true
+[rerere]
+	enabled = true
