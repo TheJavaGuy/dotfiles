@@ -10,6 +10,10 @@ brew install fzf
 brew install ag
 brew install bat
 brew install fd
+brew install ripgrep
+brew install ffmpeg
+brew install tree
+brew install stow
 brew install tmux
 brew install ponyc
 brew cask install iterm2
@@ -39,3 +43,5 @@ brew cask install docker
 brew cask install visual-studio-code
 brew cask install libreoffice
 brew cask install vlc
+brew cask install hammerspoon
+brew cask install wireshark
